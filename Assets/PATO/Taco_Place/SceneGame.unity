@@ -1643,7 +1643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfdab9ecd44094c44aaf675d89e3b4aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.604773
+      value: 10.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfdab9ecd44094c44aaf675d89e3b4aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1684,8 +1684,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cfdab9ecd44094c44aaf675d89e3b4aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 276100972}
   m_SourcePrefab: {fileID: 100100000, guid: cfdab9ecd44094c44aaf675d89e3b4aa, type: 3}
+--- !u!1 &276100971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cfdab9ecd44094c44aaf675d89e3b4aa, type: 3}
+  m_PrefabInstance: {fileID: 276100970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &276100972
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276100971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0703bb9701553c42adadf86794d42c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &309181275
 GameObject:
   m_ObjectHideFlags: 0
@@ -7465,7 +7495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2c4e051bfa29964ba6ff4c4ef5f2bbf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.12
+      value: 12.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2c4e051bfa29964ba6ff4c4ef5f2bbf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7534,7 +7564,7 @@ Animator:
   m_GameObject: {fileID: 1152599252}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a86d5a55f024b814c9ed6284d519c430, type: 2}
+  m_Controller: {fileID: 9100000, guid: e77ac1277ef91834c8bdb1dc512bde10, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
