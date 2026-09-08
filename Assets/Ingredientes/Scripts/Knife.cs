@@ -6,9 +6,6 @@ public class Knife : MonoBehaviour
 {
     private Dictionary<GameObject, Vector3> touchPos;
     
-    [SerializeField]
-    private Transform bladeDirection;
-
     private void Start()
     {
         touchPos = new Dictionary<GameObject, Vector3>();
@@ -30,7 +27,7 @@ public class Knife : MonoBehaviour
     {
         Vector3 cutDirection = (untouchPos - touchPos[Ingredient]).normalized;
 
-        Vector3 bladeDir = bladeDirection.forward;
+        Vector3 bladeDir = transform.forward;
 
         Vector3 cutNormal = Vector3.Cross(cutDirection, bladeDir).normalized;
 

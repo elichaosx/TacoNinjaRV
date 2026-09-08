@@ -251,7 +251,7 @@ Transform:
   m_GameObject: {fileID: 86643379}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.19, y: 8.3, z: -3.97}
+  m_LocalPosition: {x: -1.47, y: 8.3, z: -6.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 8929127302673078599, guid: 7e36b22e6d7421748803f2e05d9c22cf, type: 3}
+  tacoPrefab: {fileID: 649235498383625880, guid: 1d85066219db00048a0543311adc4fa6, type: 3}
   spawnInterval: 2
   minForceX: -2
   maxForceX: 2
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 8929127302673078599, guid: 7e36b22e6d7421748803f2e05d9c22cf, type: 3}
+  tacoPrefab: {fileID: 649235498383625880, guid: 03cb8089e16ba0e4ca496e00ecb91b4a, type: 3}
   spawnInterval: 2
   minForceX: -2
   maxForceX: 2
@@ -1760,7 +1760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 8929127302673078599, guid: 7e36b22e6d7421748803f2e05d9c22cf, type: 3}
+  tacoPrefab: {fileID: 649235498383625880, guid: 5feafcf97e897f54a82278edd00c1498, type: 3}
   spawnInterval: 2
   minForceX: -2
   maxForceX: 2
@@ -3812,6 +3812,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 24702766691766235, guid: b4217f490242dd044ab99344af80a369, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1772560970}
+    - targetCorrespondingSourceObject: {fileID: 24702766691766235, guid: b4217f490242dd044ab99344af80a369, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1772560974}
   m_SourcePrefab: {fileID: 100100000, guid: b4217f490242dd044ab99344af80a369, type: 3}
 --- !u!4 &757600894 stripped
 Transform:
@@ -10247,6 +10250,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1772560974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772560968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14effefebc6c3f24898062b7f23ed644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Knife
 --- !u!1 &1795954749
 GameObject:
   m_ObjectHideFlags: 0
@@ -10291,7 +10306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 8929127302673078599, guid: 7e36b22e6d7421748803f2e05d9c22cf, type: 3}
+  tacoPrefab: {fileID: 649235498383625880, guid: 641ef671c030cde4e8811a520427420a, type: 3}
   spawnInterval: 2
   minForceX: -2
   maxForceX: 2
