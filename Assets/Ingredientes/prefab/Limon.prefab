@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 7580945976206399161}
   - component: {fileID: 1413810341328321916}
   - component: {fileID: 1147937506074494419}
+<<<<<<< HEAD
   - component: {fileID: -2290834283803915129}
+=======
+  - component: {fileID: 6796989903025122028}
+>>>>>>> origin/main
   m_Layer: 0
   m_Name: Limon
   m_TagString: Ingredient
@@ -130,7 +134,11 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.36270452
   m_Center: {x: 0.00000028312206, y: -0.023316815, z: -0.013326377}
+<<<<<<< HEAD
 --- !u!54 &-2290834283803915129
+=======
+--- !u!54 &6796989903025122028
+>>>>>>> origin/main
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

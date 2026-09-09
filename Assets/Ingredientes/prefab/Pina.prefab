@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 7580945976206399161}
   - component: {fileID: 1413810341328321916}
   - component: {fileID: 4743368483477713636}
+<<<<<<< HEAD
   - component: {fileID: 8929529198615768680}
+=======
+  - component: {fileID: -3063834187753546888}
+>>>>>>> origin/main
   m_Layer: 0
   m_Name: Pina
   m_TagString: Ingredient
@@ -132,7 +136,11 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: -0.018787265, z: 0.3667142}
+<<<<<<< HEAD
 --- !u!54 &8929529198615768680
+=======
+--- !u!54 &-3063834187753546888
+>>>>>>> origin/main
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

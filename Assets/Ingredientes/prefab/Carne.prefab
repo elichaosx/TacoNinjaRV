@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 7580945976206399161}
   - component: {fileID: 6312120612553871829}
   - component: {fileID: 1413810341328321916}
+<<<<<<< HEAD
   - component: {fileID: -455698954963336123}
+=======
+  - component: {fileID: 570193155876282894}
+>>>>>>> origin/main
   m_Layer: 0
   m_Name: Carne
   m_TagString: Ingredient
@@ -132,7 +136,11 @@ MonoBehaviour:
   halfCutNormal: {x: 0, y: 0, z: 1}
   separationDistance: 0.05
   separationForce: 2
+<<<<<<< HEAD
 --- !u!54 &-455698954963336123
+=======
+--- !u!54 &570193155876282894
+>>>>>>> origin/main
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

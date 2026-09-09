@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 7580945976206399161}
   - component: {fileID: 1413810341328321916}
   - component: {fileID: 4171388864894608706}
+<<<<<<< HEAD
   - component: {fileID: -885420197465715902}
+=======
+  - component: {fileID: -6731864353563369369}
+>>>>>>> origin/main
   m_Layer: 0
   m_Name: Cilantro
   m_TagString: Ingredient
@@ -130,7 +134,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.21460901, y: 1.2429376, z: 0.21560097}
   m_Center: {x: 0.0017825514, y: 0.04872942, z: 0.0011843741}
+<<<<<<< HEAD
 --- !u!54 &-885420197465715902
+=======
+--- !u!54 &-6731864353563369369
+>>>>>>> origin/main
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

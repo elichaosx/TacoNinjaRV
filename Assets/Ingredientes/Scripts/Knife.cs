@@ -26,10 +26,15 @@ public class Knife : MonoBehaviour
     private void Cut(Vector3 untouchPos, GameObject Ingredient)
     {
         Vector3 cutDirection = (untouchPos - touchPos[Ingredient]).normalized;
+<<<<<<< HEAD
 
         Vector3 bladeDir = transform.forward;
 
         Vector3 cutNormal = Vector3.Cross(cutDirection, bladeDir).normalized;
+=======
+        
+        Vector3 cutNormal = Vector3.Cross(cutDirection, transform.forward).normalized;
+>>>>>>> origin/main
 
         if (cutNormal.sqrMagnitude < 0.001f)
         {
