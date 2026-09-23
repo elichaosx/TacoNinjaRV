@@ -76,6 +76,9 @@ public class Ingredient : MonoBehaviour
             );
         }
         
+        //Sound
+        AudioManager.Instance.PlaySound(0);
+        
         Destroy(gameObject);
     }
 }
