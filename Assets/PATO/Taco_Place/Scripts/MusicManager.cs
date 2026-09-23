@@ -1,49 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-    public AudioSource audioSource;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _musicaEscena;
 
-    public AudioClip musicaEscena1;
-    public AudioClip musicaEscena2;
-
-    private void Awake()
+    void Start()
     {
-        DontDestroyOnLoad(gameObject);
-    }
+        _audioSource.clip = _musicaEscena;
 
-    private void Start()
-    {
-        CambiarMusica();
-    }
-
-    private void OnEnable()
-    {
-        SceneManager.sceneLoaded += AlCargarEscena;
-    }
-
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= AlCargarEscena;
-    }
-
-    private void AlCargarEscena(Scene escena, LoadSceneMode modo)
-    {
-        CambiarMusica();
-    }
-
-    private void CambiarMusica()
-    {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            audioSource.clip = musicaEscena1;
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            audioSource.clip = musicaEscena2;
-        }
-
-        audioSource.Play();
+        _audioSource.Play();
     }
 }
