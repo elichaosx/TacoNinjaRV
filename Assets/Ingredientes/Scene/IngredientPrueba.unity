@@ -254,6 +254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6731864353563369369, guid: 5feafcf97e897f54a82278edd00c1498, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 649235498383625880, guid: 5feafcf97e897f54a82278edd00c1498, type: 3}
       propertyPath: m_Name
       value: Cilantro
@@ -311,6 +315,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3161211906540124598, guid: 03cb8089e16ba0e4ca496e00ecb91b4a, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 649235498383625880, guid: 03cb8089e16ba0e4ca496e00ecb91b4a, type: 3}
       propertyPath: m_Name
       value: Cebolla
@@ -368,6 +376,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3063834187753546888, guid: 1d85066219db00048a0543311adc4fa6, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 649235498383625880, guid: 1d85066219db00048a0543311adc4fa6, type: 3}
       propertyPath: m_Name
       value: Pina
@@ -469,6 +481,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6796989903025122028, guid: 641ef671c030cde4e8811a520427420a, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -482,6 +498,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 570193155876282894, guid: b23364e9ff612854ea5eecbe58ea476d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 649235498383625880, guid: b23364e9ff612854ea5eecbe58ea476d, type: 3}
       propertyPath: m_Name
       value: Carne
@@ -684,7 +704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14effefebc6c3f24898062b7f23ed644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bladeDirection: {fileID: 1793655754}
 --- !u!1001 &1809485359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,6 +813,59 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &1836628074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836628075}
+  - component: {fileID: 1836628076}
+  m_Layer: 0
+  m_Name: AudiManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1836628075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836628074}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.32809, y: 0, z: 11.21686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1836628076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836628074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fc186f96ec38248b75a32ff26506c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  _sfxList:
+  - {fileID: 8300000, guid: cb4e8a7f43140ee488269535a9c8b460, type: 3}
+  - {fileID: 8300000, guid: bf6382550bec6d047b4b5a8ec3ef7623, type: 3}
+  - {fileID: 8300000, guid: fa3e5476bd136624681f6036ca85b820, type: 3}
+  _musicList:
+  - {fileID: 8300000, guid: b6c56a0e2a3c9f94dbe711e272200d61, type: 3}
+  - {fileID: 8300000, guid: 8ad8ba9867f81a342b643260e1bcc37a, type: 3}
+  _sfxMixerGroup: {fileID: 6120553596399411484, guid: 0c07d46ab841f9845b06dc4f85e1422c, type: 2}
+  _musicMixerGroup: {fileID: -8820208770879306842, guid: 0c07d46ab841f9845b06dc4f85e1422c, type: 2}
 --- !u!1 &2144128479
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,3 +925,4 @@ SceneRoots:
   - {fileID: 1214620563}
   - {fileID: 458626374}
   - {fileID: 1136083296}
+  - {fileID: 1836628075}
