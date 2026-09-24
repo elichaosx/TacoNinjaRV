@@ -1,11 +1,15 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
-    [Header("Creación de Spawn")]
+    [Header("Configuración General")]
     public GameObject tacoPrefab;
     public float spawnInterval = 2f;
+    
+    [Header("Spawn Aleatorio")]
+    public List<Transform> spawnPoints;
 
     [Header("Fuerza Lanzamiento")]
     public float minForceX = -2f;
@@ -30,11 +34,14 @@ public class ObjectSpawner : MonoBehaviour
     }
     void SpawnAndLaunch()
     {
-        if (tacoPrefab == null) return;
-        GameObject spawnedTaco = Instantiate(tacoPrefab, transform.position, transform.rotation);
+        if (tacoPrefab == null || spawnPoints == null || spawnPoints.Count == 0) return;
+        
+        Transform randomSpawn = spawnPoints[Random.Range(0, spawnPoints.Count)];
+        
+        GameObject spawnedTaco = Instantiate(tacoPrefab, randomSpawn.position, randomSpawn.rotation);
 
         Rigidbody rb = spawnedTaco.GetComponent<Rigidbody>();
-        if (rb != null )
+        if (rb != null)
         {
             Vector3 launchForce = new Vector3(
                 Random.Range(minForceX, maxForceX),

@@ -225,61 +225,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 503204738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &86643379
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 86643380}
-  - component: {fileID: 86643381}
-  m_Layer: 0
-  m_Name: tacoSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &86643380
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86643379}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11, y: 8, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 196189875}
-  - {fileID: 309181276}
-  - {fileID: 1795954750}
-  m_Father: {fileID: 996254414}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &86643381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86643379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 649235498383625880, guid: 1d85066219db00048a0543311adc4fa6, type: 3}
-  spawnInterval: 2
-  minForceX: -2
-  maxForceX: 2
-  minForceY: 8
-  maxForceY: 12
-  minForceZ: 4
-  maxForceZ: 6
 --- !u!1001 &108298068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -819,58 +764,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186396195}
   m_Mesh: {fileID: 7037238333026113179, guid: 89e873250738c3444af222c08c8b2a8f, type: 3}
---- !u!1 &196189874
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 196189875}
-  - component: {fileID: 196189876}
-  m_Layer: 0
-  m_Name: tacoSpawn (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &196189875
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196189874}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 86643380}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &196189876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196189874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 649235498383625880, guid: 641ef671c030cde4e8811a520427420a, type: 3}
-  spawnInterval: 2
-  minForceX: -2
-  maxForceX: 2
-  minForceY: 8
-  maxForceY: 12
-  minForceZ: 4
-  maxForceZ: 6
 --- !u!1001 &209828256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1816,7 +1709,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &309181275
+--- !u!1 &280934970
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1824,44 +1717,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 309181276}
-  - component: {fileID: 309181277}
+  - component: {fileID: 280934971}
+  - component: {fileID: 280934972}
   m_Layer: 0
-  m_Name: tacoSpawn (2)
+  m_Name: SpawnObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &309181276
+--- !u!4 &280934971
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309181275}
+  m_GameObject: {fileID: 280934970}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11, y: -6, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.47, y: 5.67, z: -6.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 86643380}
+  m_Children:
+  - {fileID: 1839339597}
+  - {fileID: 1505041689}
+  - {fileID: 1230052508}
+  - {fileID: 1955675677}
+  m_Father: {fileID: 996254414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &309181277
+--- !u!114 &280934972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309181275}
+  m_GameObject: {fileID: 280934970}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 649235498383625880, guid: 5feafcf97e897f54a82278edd00c1498, type: 3}
+  tacoPrefab: {fileID: 649235498383625880, guid: b23364e9ff612854ea5eecbe58ea476d, type: 3}
   spawnInterval: 2
+  spawnPoints:
+  - {fileID: 280934971}
+  - {fileID: 1839339597}
+  - {fileID: 1505041689}
+  - {fileID: 1230052508}
+  - {fileID: 1955675677}
   minForceX: -2
   maxForceX: 2
   minForceY: 8
@@ -7065,7 +6968,7 @@ Transform:
   - {fileID: 538372678}
   - {fileID: 872445249}
   - {fileID: 757600894}
-  - {fileID: 86643380}
+  - {fileID: 280934971}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004209050
@@ -8603,6 +8506,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eba88cbf92d14b04a82b277a840b9c1e, type: 3}
   m_PrefabInstance: {fileID: 1229784427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1230052507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230052508}
+  - component: {fileID: 1230052509}
+  m_Layer: 0
+  m_Name: SpawnObjects (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1230052508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230052507}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.64, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 280934971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1230052509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230052507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  tacoPrefab: {fileID: 649235498383625880, guid: 641ef671c030cde4e8811a520427420a, type: 3}
+  spawnInterval: 2
+  spawnPoints:
+  - {fileID: 280934971}
+  - {fileID: 1839339597}
+  - {fileID: 1505041689}
+  - {fileID: 1230052508}
+  - {fileID: 1955675677}
+  minForceX: -2
+  maxForceX: 2
+  minForceY: 8
+  maxForceY: 12
+  minForceZ: 4
+  maxForceZ: 6
 --- !u!64 &1252869670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9658,6 +9619,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e10de6bf55f11a2418d21d57947fce53, type: 3}
   m_PrefabInstance: {fileID: 1485169076}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1505041688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505041689}
+  - component: {fileID: 1505041690}
+  m_Layer: 0
+  m_Name: SpawnObjects (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505041689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505041688}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 280934971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505041690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505041688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  tacoPrefab: {fileID: 649235498383625880, guid: 5feafcf97e897f54a82278edd00c1498, type: 3}
+  spawnInterval: 2
+  spawnPoints:
+  - {fileID: 280934971}
+  - {fileID: 1839339597}
+  - {fileID: 1505041689}
+  - {fileID: 1230052508}
+  - {fileID: 1955675677}
+  minForceX: -2
+  maxForceX: 2
+  minForceY: 8
+  maxForceY: 12
+  minForceZ: 4
+  maxForceZ: 6
 --- !u!1001 &1511574247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11239,58 +11258,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1795954749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1795954750}
-  - component: {fileID: 1795954751}
-  m_Layer: 0
-  m_Name: tacoSpawn (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1795954750
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795954749}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 86643380}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1795954751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795954749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  tacoPrefab: {fileID: 649235498383625880, guid: b23364e9ff612854ea5eecbe58ea476d, type: 3}
-  spawnInterval: 2
-  minForceX: -2
-  maxForceX: 2
-  minForceY: 8
-  maxForceY: 12
-  minForceZ: 4
-  maxForceZ: 6
 --- !u!1001 &1809269834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11678,6 +11645,64 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821657153}
   m_Mesh: {fileID: 7037238333026113179, guid: 89e873250738c3444af222c08c8b2a8f, type: 3}
+--- !u!1 &1839339596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839339597}
+  - component: {fileID: 1839339598}
+  m_Layer: 0
+  m_Name: SpawnObjects (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1839339597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839339596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.62, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 280934971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1839339598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839339596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  tacoPrefab: {fileID: 649235498383625880, guid: 03cb8089e16ba0e4ca496e00ecb91b4a, type: 3}
+  spawnInterval: 2
+  spawnPoints:
+  - {fileID: 280934971}
+  - {fileID: 1839339597}
+  - {fileID: 1505041689}
+  - {fileID: 1230052508}
+  - {fileID: 1955675677}
+  minForceX: -2
+  maxForceX: 2
+  minForceY: 8
+  maxForceY: 12
+  minForceZ: 4
+  maxForceZ: 6
 --- !u!1 &1846940279
 GameObject:
   m_ObjectHideFlags: 0
@@ -12481,6 +12506,64 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946001466}
   m_Mesh: {fileID: -4132612039364378522, guid: 095c0777b617e3444aa4bfb3e9c8e637, type: 3}
+--- !u!1 &1955675676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955675677}
+  - component: {fileID: 1955675678}
+  m_Layer: 0
+  m_Name: SpawnObjects (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1955675677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955675676}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.11, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 280934971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1955675678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955675676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48efdbcf0bfe7c747b315bb3e33c6735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  tacoPrefab: {fileID: 649235498383625880, guid: 1d85066219db00048a0543311adc4fa6, type: 3}
+  spawnInterval: 2
+  spawnPoints:
+  - {fileID: 280934971}
+  - {fileID: 1839339597}
+  - {fileID: 1505041689}
+  - {fileID: 1230052508}
+  - {fileID: 1955675677}
+  minForceX: -2
+  maxForceX: 2
+  minForceY: 8
+  maxForceY: 12
+  minForceZ: 4
+  maxForceZ: 6
 --- !u!1 &1956074855
 GameObject:
   m_ObjectHideFlags: 0
