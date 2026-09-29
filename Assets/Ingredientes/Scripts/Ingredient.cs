@@ -16,6 +16,9 @@ public class Ingredient : MonoBehaviour
     [SerializeField]
     private float separationForce = 1.5f;
 
+    [SerializeField]
+    private GameObject cutParticle;
+
     public void CutIngredient(Vector3 cutPoint, Vector3 cutNormal)
     {
         if (cutNormal.sqrMagnitude < 0.001f)
@@ -78,7 +81,10 @@ public class Ingredient : MonoBehaviour
         
         //Sound
         AudioManager.Instance.PlaySound(0);
-        
+
+        //Particles
+        ParticlesManager.Instance.PlayParticle(cutParticle, transform.position);
+
         Destroy(gameObject);
     }
 }
