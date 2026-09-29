@@ -109,6 +109,7 @@ MonoBehaviour:
   halfCutNormal: {x: 0, y: 0, z: 1}
   separationDistance: 0.05
   separationForce: 2
+  cutParticle: {fileID: 100000, guid: bf63c98eb60b60845a3b282865a53c07, type: 3}
 --- !u!65 &4171388864894608706
 BoxCollider:
   m_ObjectHideFlags: 0
