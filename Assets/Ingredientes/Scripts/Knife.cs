@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class Knife : MonoBehaviour
 {
-    private Dictionary<GameObject, Vector3> touchPos;
+    private Dictionary<Ingredient, Vector3> touchPos;
     
     private void Start()
     {
-        touchPos = new Dictionary<GameObject, Vector3>();
+        touchPos = new Dictionary<Ingredient, Vector3>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ingredient"))
-            touchPos.Add(other.gameObject, other.ClosestPoint(transform.position));
+        if (other.TryGetComponent<Ingredient>(out Ingredient ingredient))
+            touchPos.Add(ingredient, other.ClosestPoint(transform.position));
+        else if (other.TryGetComponent<Bomb>(out Bomb bomb))
+            bomb.CutBomb();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Ingredient"))
-            Cut(other.ClosestPoint(transform.position), other.gameObject );
+        if (other.TryGetComponent<Ingredient>(out Ingredient ingredient))
+            Cut(other.ClosestPoint(transform.position), ingredient );
     }
 
-    private void Cut(Vector3 untouchPos, GameObject Ingredient)
+    private void Cut(Vector3 untouchPos, Ingredient ingredient)
     {
-        Vector3 cutDirection = (untouchPos - touchPos[Ingredient]).normalized;
+        Vector3 cutDirection = (untouchPos - touchPos[ingredient]).normalized;
         
         Vector3 cutNormal = Vector3.Cross(cutDirection, transform.forward).normalized;
 
@@ -35,8 +37,8 @@ public class Knife : MonoBehaviour
             return;
         }
 
-        Ingredient.GetComponent<Ingredient>()?.CutIngredient(touchPos[Ingredient], cutNormal);
+        ingredient.CutIngredient(touchPos[ingredient], cutNormal);
 
-        touchPos.Remove(Ingredient);
+        touchPos.Remove(ingredient);
     }
 }
