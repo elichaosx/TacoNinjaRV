@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
-    [Header("Configuración General")]
-    public GameObject tacoPrefab;
-    public float spawnInterval = 2f;
-    
-    [Header("Spawn Aleatorio")]
+    [Header("Lista de Ingredientes (Prefabs)")]
+    public List<GameObject> ingredientPrefabs;
+
+    [Header("Puntos de Spawn (Tus 3 posiciones)")]
     public List<Transform> spawnPoints;
+
+    [Header("Configuración de Tiempo")]
+    public float minSpawnInterval = 1.5f;
+
+    public float maxSpawnInterval = 3f;
 
     [Header("Fuerza Lanzamiento")]
     public float minForceX = -2f;
@@ -18,7 +22,7 @@ public class ObjectSpawner : MonoBehaviour
     public float maxForceY = 12f;
     public float minForceZ = 4f;
     public float maxForceZ = 6f;
-    
+
     void Start()
     {
         StartCoroutine(SpawnRoutine());
@@ -28,19 +32,25 @@ public class ObjectSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(spawnInterval);
+            float randomWait = Random.Range(minSpawnInterval, maxSpawnInterval);
+            yield return new WaitForSeconds(randomWait);
+
             SpawnAndLaunch();
         }
     }
+
     void SpawnAndLaunch()
     {
-        if (tacoPrefab == null || spawnPoints == null || spawnPoints.Count == 0) return;
+        if (ingredientPrefabs == null || ingredientPrefabs.Count == 0) return;
+        if (spawnPoints == null || spawnPoints.Count == 0) return;
+        
+        GameObject randomPrefab = ingredientPrefabs[Random.Range(0, ingredientPrefabs.Count)];
         
         Transform randomSpawn = spawnPoints[Random.Range(0, spawnPoints.Count)];
         
-        GameObject spawnedTaco = Instantiate(tacoPrefab, randomSpawn.position, randomSpawn.rotation);
-
-        Rigidbody rb = spawnedTaco.GetComponent<Rigidbody>();
+        GameObject spawnedIngredient = Instantiate(randomPrefab, randomSpawn.position, randomSpawn.rotation);
+        
+        Rigidbody rb = spawnedIngredient.GetComponent<Rigidbody>();
         if (rb != null)
         {
             Vector3 launchForce = new Vector3(
