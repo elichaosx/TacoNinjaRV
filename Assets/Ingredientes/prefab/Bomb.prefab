@@ -149,4 +149,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0b15c12a54c3f3479e6ccaf14738fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bomb
-  bombParticle: {fileID: 100000, guid: 3d4c5d075dec2a04f9ca277c5103d937, type: 3}
+  bombParticle: {fileID: 100000, guid: 5d10dfcd74481c2478dc37e06ebb98dc, type: 3}
