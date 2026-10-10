@@ -1865,6 +1865,7 @@ MonoBehaviour:
   - {fileID: 649235498383625880, guid: 5feafcf97e897f54a82278edd00c1498, type: 3}
   - {fileID: 649235498383625880, guid: 641ef671c030cde4e8811a520427420a, type: 3}
   - {fileID: 649235498383625880, guid: 1d85066219db00048a0543311adc4fa6, type: 3}
+  - {fileID: 6707862456486389657, guid: 5782d1fc6a18d8646bbd383c4c4253ad, type: 3}
   spawnPoints:
   - {fileID: 280934971}
   - {fileID: 1199288363}
@@ -9018,7 +9019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountdownManager
   countdownText: {fileID: 1620587589}
   canvasCountdown: {fileID: 711290765}
-  spawner: {fileID: 280934970}
+  spawner: {fileID: 1199288362}
 --- !u!4 &1192078666
 Transform:
   m_ObjectHideFlags: 0
