@@ -84,6 +84,9 @@ public class Ingredient : MonoBehaviour
 
         //Particles
         ParticlesManager.Instance.PlayParticle(cutParticle, transform.position);
+        
+        //Score
+        ScoreManager.instance.AddScore();
 
         Destroy(gameObject);
     }
