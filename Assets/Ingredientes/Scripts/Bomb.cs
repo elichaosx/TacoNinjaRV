@@ -7,8 +7,7 @@ public class Bomb : MonoBehaviour
     
     public void CutBomb()
     {
-        GameManager.instance.LoseLife();
-        Debug.Log("Bomba cortada");
+        GameManager.instance.LoseLife(3);
         
         //Sound
         AudioManager.Instance.PlaySound(1);
