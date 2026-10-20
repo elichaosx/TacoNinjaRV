@@ -4,11 +4,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    [SerializeField] 
+    private GameObject GameOverCanvas;
     
     [Header("Game Settings")]
     [SerializeField]
     private int lifes = 3;
-
+    
     private void Awake()
     {
         if(instance != null &&  instance != this)
@@ -21,20 +24,21 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void AddScore()
-    {
-    }
 
-    public void LoseLife()
+    public void LoseLife(int  amount = 1)
     {
-        lifes--;
+        lifes = (int)Mathf.Clamp(lifes - amount, 0, Mathf.Infinity);
         
         if(lifes <= 0)
             Lose();
     }
 
-    private void Lose()
+    public void Lose()
     {
+        gameObject.SetActive(true); 
+        
+        //Spawner.dejar de spawnear
+        
         Debug.Log("Has perdido");
     }
 }
