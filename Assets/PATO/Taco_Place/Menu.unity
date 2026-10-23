@@ -300,15 +300,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -360,15 +360,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -381,6 +381,10 @@ PrefabInstance:
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -968,15 +972,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1018,6 +1022,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.813
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 24702766691766235, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_Name
       value: Chef Knife
@@ -1028,15 +1036,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2134,7 +2142,7 @@ Transform:
   m_GameObject: {fileID: 687425829}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000024, y: 0.49999976, z: 0.4999998, w: 0.50000024}
-  m_LocalPosition: {x: -2.5599997, y: 4.122, z: -0.0000024414062}
+  m_LocalPosition: {x: -2.5599997, y: 3.7999997, z: -0.0000024414062}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5104,15 +5112,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5154,6 +5162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.813
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 24702766691766235, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_Name
       value: Chef Knife
@@ -5164,7 +5176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
@@ -5977,7 +5989,7 @@ Transform:
   m_GameObject: {fileID: 875259586}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000024, y: 0.49999976, z: 0.4999998, w: 0.50000024}
-  m_LocalPosition: {x: 2.56, y: 4.122, z: -0.0000024414062}
+  m_LocalPosition: {x: 2.56, y: 3.7999997, z: -0.0000024414062}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6271,7 +6283,7 @@ Transform:
   m_GameObject: {fileID: 965474415}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000024, y: 0.49999976, z: 0.4999998, w: 0.50000024}
-  m_LocalPosition: {x: 2.56, y: 4.122, z: 5.1199975}
+  m_LocalPosition: {x: 2.56, y: 3.8, z: 5.1199975}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6443,7 +6455,7 @@ Transform:
   m_GameObject: {fileID: 1020093262}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000024, y: 0.49999976, z: 0.4999998, w: 0.50000024}
-  m_LocalPosition: {x: -2.5543027, y: 4.122, z: 5.1199975}
+  m_LocalPosition: {x: -2.5543027, y: 3.7999997, z: 5.1199975}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8004,15 +8016,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.9999998
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.9999998
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.9999998
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8860,15 +8872,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.21424
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8910,6 +8922,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.813
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4217f490242dd044ab99344af80a369, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 24702766691766235, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_Name
       value: Chef Knife
@@ -8920,7 +8936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35200998
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalScale.y
