@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+        GameOverCanvas.SetActive(false);
     }
 
 
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void Lose()
     {
-        gameObject.SetActive(true); 
+        GameOverCanvas.SetActive(true);
         
         //Spawner.dejar de spawnear
         
