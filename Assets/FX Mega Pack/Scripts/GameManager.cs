@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent<int> OnLifesChange;
 
+    [SerializeField]
+    private ObjectSpawner[] spawners;
+
     private void Start()
     {
         GameOverCanvas.SetActive(false);
@@ -32,6 +35,12 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void StartGame()
+    {
+        foreach (ObjectSpawner spawner in spawners)
+            spawner.StartSpawn();
+    }
+
 
     public void LoseLife(int  amount = 1)
     {
@@ -46,8 +55,9 @@ public class GameManager : MonoBehaviour
     public void Lose()
     {
         GameOverCanvas.SetActive(true);
-        
-        //Spawner.dejar de spawnear
+
+        foreach (ObjectSpawner spawner in spawners) 
+            spawner.StopSpawn();
         
         Debug.Log("Has perdido");
     }
