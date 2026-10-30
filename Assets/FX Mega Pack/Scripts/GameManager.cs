@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,13 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField]
     private int lifes = 3;
-    
+
+    public UnityEvent<int> OnLifesChange;
+
+    private void Start()
+    {
+        GameOverCanvas.SetActive(false);
+    }
     private void Awake()
     {
         if(instance != null &&  instance != this)
@@ -22,15 +29,17 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
-        GameOverCanvas.SetActive(false);
+
     }
 
 
     public void LoseLife(int  amount = 1)
     {
         lifes = (int)Mathf.Clamp(lifes - amount, 0, Mathf.Infinity);
-        
-        if(lifes <= 0)
+
+        OnLifesChange?.Invoke(lifes);
+
+        if (lifes <= 0)
             Lose();
     }
 

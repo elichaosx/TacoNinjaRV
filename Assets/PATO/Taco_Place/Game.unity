@@ -1399,7 +1399,7 @@ Transform:
   m_GameObject: {fileID: 208855890}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.16, z: -12.52}
+  m_LocalPosition: {x: 0, y: 1.09, z: -12.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   - {fileID: 208855891}
   - {fileID: 1837169951}
   - {fileID: 409090710}
-  minSpawnInterval: 1.5
+  minSpawnInterval: 2.25
   maxSpawnInterval: 3
   minForceX: -2
   maxForceX: 2
@@ -1686,6 +1686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 239505459}
+  - component: {fileID: 239505460}
   m_Layer: 0
   m_Name: Vidas
   m_TagString: Untagged
@@ -1709,6 +1710,22 @@ Transform:
   - {fileID: 309395417}
   m_Father: {fileID: 1665345010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239505460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239505458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa957b3c0369284cb334204dfda21b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  vidasImages:
+  - {fileID: 2043089856}
+  - {fileID: 1512176842}
+  - {fileID: 2092059242}
 --- !u!1 &241024813
 GameObject:
   m_ObjectHideFlags: 0
@@ -7888,6 +7905,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   GameOverCanvas: {fileID: 1933096601}
   lifes: 3
+  OnLifesChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1463890086
 GameObject:
   m_ObjectHideFlags: 0
@@ -12095,13 +12115,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933096602}
+  - component: {fileID: 1933096603}
   m_Layer: 0
   m_Name: GameOverCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1933096602
 Transform:
   m_ObjectHideFlags: 0
@@ -12118,6 +12139,20 @@ Transform:
   - {fileID: 791920296}
   m_Father: {fileID: 1665345010}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &1933096603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933096601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec704c34199bba149b5805be494fa7c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  _scoreText: {fileID: 1830282581}
+  _recordText: {fileID: 2052790828}
 --- !u!1 &2025993644
 GameObject:
   m_ObjectHideFlags: 0
