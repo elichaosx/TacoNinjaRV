@@ -23,9 +23,14 @@ public class ObjectSpawner : MonoBehaviour
     public float minForceZ = 4f;
     public float maxForceZ = 6f;
 
-    void Start()
+    public void StartSpawn()
     {
         StartCoroutine(SpawnRoutine());
+    }
+
+    public void StopSpawn()
+    {
+      StopAllCoroutines();  
     }
 
     IEnumerator SpawnRoutine()
