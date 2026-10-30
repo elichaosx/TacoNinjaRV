@@ -46,6 +46,7 @@ public class CountdownManager : MonoBehaviour
         if (spawner != null)
         {
             spawner.SetActive(true);
+            GameManager.instance.StartGame();
         }
     }
 }
