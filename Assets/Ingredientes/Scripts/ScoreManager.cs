@@ -1,9 +1,13 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     
+
+
+
     private int score = 0;
     
     private void Awake()
@@ -30,4 +34,21 @@ public class ScoreManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("HighScore", record);
     }
+
+    public int GetScore()
+    {
+        
+        return score;
+    }
+
+    public int GetRecord()
+    {
+        return PlayerPrefs.GetInt("HighScore", 0);
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+    }
+
 }
