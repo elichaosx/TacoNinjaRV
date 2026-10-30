@@ -7908,6 +7908,8 @@ MonoBehaviour:
   OnLifesChange:
     m_PersistentCalls:
       m_Calls: []
+  spawners:
+  - {fileID: 208855892}
 --- !u!1 &1463890086
 GameObject:
   m_ObjectHideFlags: 0
