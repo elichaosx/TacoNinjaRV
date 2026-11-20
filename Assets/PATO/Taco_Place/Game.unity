@@ -1453,7 +1453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.084
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1745,10 +1745,10 @@ MonoBehaviour:
   - {fileID: 208855891}
   - {fileID: 1837169951}
   - {fileID: 409090710}
-  minSpawnInterval: 0.85
-  maxSpawnInterval: 1.25
-  minForceX: -1.25
-  maxForceX: 1.25
+  minSpawnInterval: 0.9
+  maxSpawnInterval: 1.3
+  minForceX: -0.9
+  maxForceX: 0.9
   minForceY: 7.5
   maxForceY: 9
   minForceZ: 6
@@ -4628,7 +4628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.084
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -5149,7 +5149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6594,7 +6594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.084
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -11405,7 +11405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281951535076173152, guid: b4217f490242dd044ab99344af80a369, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.084
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
