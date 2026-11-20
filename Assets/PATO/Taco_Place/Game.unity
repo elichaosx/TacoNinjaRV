@@ -1747,12 +1747,12 @@ MonoBehaviour:
   - {fileID: 409090710}
   minSpawnInterval: 0.9
   maxSpawnInterval: 1.3
-  minForceX: -0.9
-  maxForceX: 0.9
+  minForceX: -1
+  maxForceX: 1
   minForceY: 7.5
-  maxForceY: 9
+  maxForceY: 8
   minForceZ: 6
-  maxForceZ: 6
+  maxForceZ: 6.5
 --- !u!1 &209922593
 GameObject:
   m_ObjectHideFlags: 0
