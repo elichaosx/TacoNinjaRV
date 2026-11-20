@@ -20,12 +20,7 @@ public class VidasCanvas : MonoBehaviour
     {
         for(int i = 0; i < lifes-1; i++)
         {
-            vidasImages[i].enabled = true;
+            vidasImages[i].gameObject.SetActive(true);
         }
-    }
-
-    public void OnEnable()
-    {
-        vidasImages = GetComponentsInChildren<Image>();
     }
 }
