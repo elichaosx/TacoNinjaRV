@@ -18,9 +18,6 @@ public class VidasCanvas : MonoBehaviour
 
     private void UpdateLives(int lifes)
     {
-        for(int i = 0; i < lifes-1; i++)
-        {
-            vidasImages[i].gameObject.SetActive(true);
-        }
+        vidasImages[lifes].gameObject.SetActive(true);
     }
 }
