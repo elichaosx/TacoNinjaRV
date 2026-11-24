@@ -5600,7 +5600,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6273693517554056474, guid: 47f093783dbcfb748b5f45fc0bd26c39, type: 3}
 --- !u!1001 &790293467
@@ -8931,6 +8931,7 @@ PrefabInstance:
     - {fileID: 514750040985838964, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
     - {fileID: 514750040439661493, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
     - {fileID: 514750039454450172, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+    - {fileID: 5518899284880179291, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
