@@ -11,9 +11,9 @@ public class ObjectSpawner : MonoBehaviour
     public List<Transform> spawnPoints;
 
     [Header("Configuración de Tiempo")]
-    public float minSpawnInterval = 1.5f;
+    public float minSpawnInterval = 0.9f;
 
-    public float maxSpawnInterval = 3f;
+    public float maxSpawnInterval = 1.3f;
 
     [Header("Fuerza Lanzamiento")]
     public float minForceX = -2f;

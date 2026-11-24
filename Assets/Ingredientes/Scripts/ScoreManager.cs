@@ -4,11 +4,11 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
-    
-
-
 
     private int score = 0;
+
+    [SerializeField]
+    private int SupuestoRecord;
     
     private void Awake()
     {
@@ -20,6 +20,9 @@ public class ScoreManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+
+        if (PlayerPrefs.GetInt("HighScore", 0) < SupuestoRecord)
+            PlayerPrefs.SetInt("HighScore", SupuestoRecord);
     }
     
     public void AddScore(int cant = 100)

@@ -4097,6 +4097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013b36406796630438e6356271c1e313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
+  SupuestoRecord: 5000
 --- !u!1 &744238377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9003561024852206058, guid: b722d25faa595534c8ea69b6b4915a3d, type: 3}
